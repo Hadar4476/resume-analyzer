@@ -1,0 +1,27 @@
+# Node.js
+node_modules/
+dist/
+.env
+npm-debug.log*
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+*.log
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Uploaded files
+uploads/
+
+# Python output (optional)
+*.out
+*.pkl
+*.model
