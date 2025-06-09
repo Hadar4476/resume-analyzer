@@ -6,6 +6,6 @@ import resumeController from "../controllers/resumes";
 const router = express.Router();
 const upload = multer({ dest: "uploads/" });
 
-router.post("/resume", upload.single("resume"), resumeController.analyzeResume);
+router.post("/", upload.single("file"), resumeController.analyzeResume);
 
 export default router;

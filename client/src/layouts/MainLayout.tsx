@@ -3,7 +3,6 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Box,
   useTheme,
   Stack,
   Button,
@@ -45,7 +44,7 @@ const MainLayout = () => {
         </Toolbar>
       </AppBar>
 
-      <main className="flex-grow p-8 flex flex-col">
+      <main className="flex-1 p-8 flex flex-col">
         <Outlet />
       </main>
     </Stack>

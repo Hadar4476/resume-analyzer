@@ -15,7 +15,7 @@ const PublicRoute = () => {
 
   useEffect(() => {
     if (isAppLoaded && isLoggedIn) {
-      navigate(ROUTE_NAMES.SHOWCASE, { replace: true });
+      navigate(ROUTE_NAMES.RESUME_UPLOAD, { replace: true });
     }
   }, [isAppLoaded, isLoggedIn, navigate]);
 

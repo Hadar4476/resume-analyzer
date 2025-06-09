@@ -8,6 +8,7 @@ import Dashboard from "@/pages/dashboard/Dashboard";
 import Posts from "@/pages/dashboard/posts/Posts";
 import SinglePost from "@/pages/dashboard/posts/SinglePost";
 import Showcase from "@/pages/dashboard/showcase/Showcase";
+import ResumeUpload from "@/pages/dashboard/resume-upload/ResumeUpload";
 
 const privateRoutes = [
   {
@@ -15,7 +16,7 @@ const privateRoutes = [
     element: <MainLayout />,
     children: [
       // { path: "", element: <Navigate to={ROUTE_NAMES.DASHBOARD} /> },
-      { path: "", element: <Navigate to={ROUTE_NAMES.SHOWCASE} /> },
+      { path: "", element: <Navigate to={ROUTE_NAMES.RESUME_UPLOAD} /> },
       {
         path: ROUTE_NAMES.DASHBOARD,
         element: <Dashboard />,
@@ -31,6 +32,10 @@ const privateRoutes = [
       {
         path: ROUTE_NAMES.SHOWCASE,
         element: <Showcase />,
+      },
+      {
+        path: ROUTE_NAMES.RESUME_UPLOAD,
+        element: <ResumeUpload />,
       },
     ],
   },
