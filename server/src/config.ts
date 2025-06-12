@@ -8,6 +8,7 @@ const config = {
     process.env.MONGO_URI ?? "mongodb://localhost:27017/resumeAnalyzer",
   NODE_ENV: process.env.NODE_ENV ?? "development",
   TOKEN_SECRET: process.env.TOKEN_SECRET ?? "",
+  OPENAI_API_KEY: process.env.OPENAI_API_KEY ?? "",
 };
 
 export default config;

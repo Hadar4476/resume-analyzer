@@ -27,6 +27,7 @@ import mongoose from "mongoose";
 import http from "http";
 
 import initLogs from "./utils/initLogs";
+import initPositions from "./utils/initPositions";
 
 const app = express();
 
@@ -49,6 +50,7 @@ mongoose
   .connect(config.MONGO_URI)
   .then(async (result) => {
     await initLogs();
+    await initPositions();
 
     if (require.main === module) {
       server.listen(config.PORT, () => {

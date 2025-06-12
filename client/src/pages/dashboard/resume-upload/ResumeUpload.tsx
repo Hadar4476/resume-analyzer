@@ -20,8 +20,6 @@ const ResumeUpload = () => {
   const [isPending, setIsPending] = useState(false);
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setFile(() => null);
-
     const selectedFile = event.target.files?.[0];
 
     if (selectedFile) {
@@ -30,6 +28,8 @@ const ResumeUpload = () => {
   };
 
   const handleUploadFile = async () => {
+    setIsPending(true);
+
     if (file) {
       const formData = new FormData();
 
@@ -37,8 +37,12 @@ const ResumeUpload = () => {
 
       try {
         const response = await uploadResume(formData);
+
+        console.log({ response });
       } catch (error) {
         console.log(error);
+      } finally {
+        setIsPending(false);
       }
     }
   };
@@ -46,10 +50,16 @@ const ResumeUpload = () => {
   return (
     <Stack className="flex-1 gap-4 items-center justify-center">
       <Box className="flex items-center justify-center gap-4">
-        <Button component="label" tabIndex={-1} startIcon={<CloudUploadIcon />}>
+        <Button
+          component="label"
+          loading={isPending}
+          tabIndex={-1}
+          startIcon={<CloudUploadIcon />}
+        >
           {file ? "Change file" : "Upload file"}
           <VisuallyHiddenInput
             type="file"
+            accept=".pdf,.docx,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
             onChange={handleChange}
             multiple={false}
           />
