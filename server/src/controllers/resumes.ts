@@ -21,7 +21,7 @@ const analyzeResume = async (
   next: NextFunction
 ) => {
   try {
-    const positions = await Position.find();
+    const positions = await Position.find().lean();
 
     const filePath = req.file?.path;
 
@@ -56,10 +56,7 @@ const analyzeResume = async (
         temperature: 0,
       });
 
-      const scoreText = completion.choices[0].message?.content?.trim();
-
-      const score = parseInt(scoreText ?? "0", 10);
-      if (isNaN(score)) throw new AppError("Invalid score from GPT", 500);
+      const score = +(completion.choices[0].message?.content?.trim() ?? "0");
 
       scoreResults.push({
         ...position,

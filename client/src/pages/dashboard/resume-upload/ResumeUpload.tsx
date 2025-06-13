@@ -52,8 +52,9 @@ const ResumeUpload = () => {
       <Box className="flex items-center justify-center gap-4">
         <Button
           component="label"
-          loading={isPending}
           tabIndex={-1}
+          loading={isPending}
+          loadingPosition="start"
           startIcon={<CloudUploadIcon />}
         >
           {file ? "Change file" : "Upload file"}

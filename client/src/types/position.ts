@@ -6,9 +6,11 @@ enum Depatment {
 }
 
 export interface IPosition {
+  _id: string;
   title: string;
   department: Depatment;
   description: string;
   requiredSkills: string[];
   preferredExperience: string;
+  score: number;
 }
