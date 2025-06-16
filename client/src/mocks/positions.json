@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "684ad0e9ff22fa0736e8c01e",
+    "title": "Full Stack Developer",
+    "department": "Engineering",
+    "description": "We're looking for a Full Stack Developer proficient in both frontend and backend technologies to work on a wide range of products.",
+    "requiredSkills": [
+      "JavaScript",
+      "Node.js",
+      "React",
+      "MongoDB",
+      "REST APIs"
+    ],
+    "preferredExperience": "3+ years in full stack development",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.215Z",
+    "updatedAt": "2025-06-12T13:06:49.215Z",
+    "score": 90
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c01f",
+    "title": "Frontend Developer",
+    "department": "Engineering",
+    "description": "We need a creative frontend developer with strong React skills to build user-friendly and accessible web interfaces.",
+    "requiredSkills": ["React", "TypeScript", "SCSS", "Redux", "Figma"],
+    "preferredExperience": "2+ years in frontend development",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.215Z",
+    "updatedAt": "2025-06-12T13:06:49.215Z",
+    "score": 85
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c020",
+    "title": "Backend Developer",
+    "department": "Engineering",
+    "description": "As a backend developer, you'll work on scalable server-side logic and APIs to support our growing platform.",
+    "requiredSkills": ["Node.js", "Express", "PostgreSQL", "Docker", "Redis"],
+    "preferredExperience": "3+ years in backend development",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.215Z",
+    "updatedAt": "2025-06-12T13:06:49.215Z",
+    "score": 85
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c021",
+    "title": "QA Engineer",
+    "department": "Quality Assurance",
+    "description": "We are hiring a QA Engineer to ensure the quality and reliability of our software with automated and manual testing.",
+    "requiredSkills": [
+      "Test Automation",
+      "Cypress",
+      "Jest",
+      "CI/CD",
+      "Manual Testing"
+    ],
+    "preferredExperience": "2+ years in software testing",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.215Z",
+    "updatedAt": "2025-06-12T13:06:49.215Z",
+    "score": 10
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c022",
+    "title": "UI/UX Designer",
+    "department": "Design",
+    "description": "Join our design team to craft intuitive user experiences and beautiful interfaces for our web and mobile applications.",
+    "requiredSkills": [
+      "Figma",
+      "Adobe XD",
+      "User Research",
+      "Wireframing",
+      "Prototyping"
+    ],
+    "preferredExperience": "2+ years in UI/UX design",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 20
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c023",
+    "title": "DevOps Engineer",
+    "department": "Infrastructure",
+    "description": "We're seeking a DevOps Engineer to automate deployments, manage infrastructure, and ensure high system availability.",
+    "requiredSkills": ["AWS", "Docker", "Kubernetes", "CI/CD", "Terraform"],
+    "preferredExperience": "3+ years in DevOps or infrastructure roles",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 10
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c024",
+    "title": "Senior Full Stack Developer",
+    "department": "Engineering",
+    "description": "Lead full stack development efforts on key projects and mentor junior developers.",
+    "requiredSkills": ["TypeScript", "React", "Node.js", "GraphQL", "AWS"],
+    "preferredExperience": "5+ years full stack development, leadership experience a plus",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 85
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c025",
+    "title": "Junior Frontend Developer",
+    "department": "Engineering",
+    "description": "Assist in developing frontend components and learn from a supportive engineering team.",
+    "requiredSkills": ["HTML", "CSS", "JavaScript", "React"],
+    "preferredExperience": "0–1 years in frontend development or related field",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 85
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c026",
+    "title": "Automation QA Engineer",
+    "department": "Quality Assurance",
+    "description": "Design and maintain automation frameworks to ensure product quality.",
+    "requiredSkills": ["Selenium", "Jest", "Mocha", "CI Tools", "Git"],
+    "preferredExperience": "2+ years in QA with automation focus",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 10
+  },
+  {
+    "_id": "684ad0e9ff22fa0736e8c027",
+    "title": "Product Designer",
+    "department": "Design",
+    "description": "Create thoughtful design systems and user interfaces that align with product goals.",
+    "requiredSkills": [
+      "Design Systems",
+      "Figma",
+      "UX Research",
+      "Accessibility",
+      "Interaction Design"
+    ],
+    "preferredExperience": "3+ years in digital product design",
+    "__v": 0,
+    "createdAt": "2025-06-12T13:06:49.216Z",
+    "updatedAt": "2025-06-12T13:06:49.216Z",
+    "score": 10
+  }
+]

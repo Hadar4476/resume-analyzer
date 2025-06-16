@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import { authActions } from "@/store/reducers/auth";
 import { useState } from "react";
 import { login } from "@/services/auth";
+import { ROUTE_NAMES } from "@/types";
 
 // Define the shape of your form fields
 interface LoginFormValues {
@@ -75,7 +76,7 @@ export const useLogin = () => {
             user,
           })
         );
-        navigate("/");
+        navigate(ROUTE_NAMES.HOME);
       } catch (error: any) {
         setError(() => error.response.data.message);
       } finally {
@@ -111,7 +112,7 @@ export const useLogin = () => {
     //         })
     //       );
 
-    //       navigate("/");
+    //       navigate(ROUTE_NAMES.HOME);
     //     },
     //     onError: (error) => {
     //       console.error("Login failed:", error);

@@ -1,5 +1,6 @@
 import { icons } from "@/theme";
 import { IAuthState } from "./user";
+import { IPositionsState } from "./position";
 
 export enum ROUTE_NAMES {
   HOME = "/",
@@ -9,6 +10,7 @@ export enum ROUTE_NAMES {
   POSTS = "posts",
   SHOWCASE = "showcase",
   RESUME_UPLOAD = "resume-upload",
+  POSITIONS = "positions",
   NOT_FOUND = "not-found",
 }
 
@@ -21,6 +23,7 @@ export interface ISystemState {
 }
 
 export interface IRootState {
+  positions: IPositionsState;
   auth: IAuthState;
   system: ISystemState;
 }

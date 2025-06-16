@@ -13,4 +13,9 @@ export interface IPosition {
   requiredSkills: string[];
   preferredExperience: string;
   score: number;
+  createdAt: string;
+}
+
+export interface IPositionsState {
+  positions: IPosition[];
 }

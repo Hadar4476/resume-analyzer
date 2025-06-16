@@ -9,6 +9,7 @@ import Posts from "@/pages/dashboard/posts/Posts";
 import SinglePost from "@/pages/dashboard/posts/SinglePost";
 import Showcase from "@/pages/dashboard/showcase/Showcase";
 import ResumeUpload from "@/pages/dashboard/resume-upload/ResumeUpload";
+import Positions from "@/pages/dashboard/positions/Positions";
 
 const privateRoutes = [
   {
@@ -36,6 +37,10 @@ const privateRoutes = [
       {
         path: ROUTE_NAMES.RESUME_UPLOAD,
         element: <ResumeUpload />,
+      },
+      {
+        path: ROUTE_NAMES.POSITIONS,
+        element: <Positions />,
       },
     ],
   },

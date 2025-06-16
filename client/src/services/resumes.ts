@@ -1,6 +1,6 @@
 import axios from "axios";
 import appConfig from "../config";
-import { IPosition } from "@/types/position";
+import { IPosition } from "@/types";
 
 const route = "/resumes";
 

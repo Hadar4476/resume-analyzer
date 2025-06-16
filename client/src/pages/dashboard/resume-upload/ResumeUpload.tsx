@@ -2,6 +2,10 @@ import { Box, Button, Stack, styled, Typography } from "@mui/material";
 import CloudUploadIcon from "@mui/icons-material/CloudUpload";
 import React, { useState } from "react";
 import { uploadResume } from "@/services/resumes";
+import { useDispatch } from "react-redux";
+import { positionsActions } from "@/store/reducers/positions";
+import { useNavigate } from "react-router";
+import { ROUTE_NAMES } from "@/types";
 
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
@@ -16,6 +20,9 @@ const VisuallyHiddenInput = styled("input")({
 });
 
 const ResumeUpload = () => {
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
   const [file, setFile] = useState<File | null>(null);
   const [isPending, setIsPending] = useState(false);
 
@@ -28,6 +35,8 @@ const ResumeUpload = () => {
   };
 
   const handleUploadFile = async () => {
+    // navigate("/" + ROUTE_NAMES.POSITIONS);
+
     setIsPending(true);
 
     if (file) {
@@ -39,6 +48,10 @@ const ResumeUpload = () => {
         const response = await uploadResume(formData);
 
         console.log({ response });
+
+        dispatch(positionsActions.setPositions(response));
+
+        navigate("/" + ROUTE_NAMES.POSITIONS);
       } catch (error) {
         console.log(error);
       } finally {

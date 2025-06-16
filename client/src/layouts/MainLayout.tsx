@@ -24,14 +24,14 @@ const MainLayout = () => {
   return (
     <Stack className="min-h-screen">
       <AppBar position="sticky">
-        <Toolbar>
-          <Typography
+        <Toolbar className="justify-end">
+          {/* <Typography
             className="flex-1"
             variant="h6"
             style={{ color: theme.palette.text?.primary }}
           >
             Current Route: {location.pathname}
-          </Typography>
+          </Typography> */}
           <Stack direction="row" alignItems="center" gap="12px">
             <LanguageSelector />
             <Button size="small" onClick={onToggleTheme}>

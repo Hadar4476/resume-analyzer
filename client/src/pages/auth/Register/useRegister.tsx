@@ -4,6 +4,7 @@ import { useFormik } from "formik";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { register } from "@/services/auth";
+import { ROUTE_NAMES } from "@/types";
 
 interface RegisterFormValues {
   name: string;
@@ -53,7 +54,7 @@ export const useRegister = () => {
         const response = await register(values);
 
         if (response) {
-          navigate("/login");
+          navigate("/" + ROUTE_NAMES.LOGIN);
         }
       } catch (error: any) {
         setError(() => error.response.data.message);
@@ -68,7 +69,7 @@ export const useRegister = () => {
 
     //       console.log("Register successful:", userId);
 
-    //       navigate("/login");
+    //       navigate("/" + ROUTE_NAMES.LOGIN);
     //     },
     //     onError: (error) => {
     //       console.error("Register failed:", error);
